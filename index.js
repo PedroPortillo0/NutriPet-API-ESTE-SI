@@ -30,7 +30,7 @@ app.get('/', (req, res) => {
 
 // Conexión a MongoDB Atlas
 mongoose
-  .connect(process.env.MONGODB_URI)
+  .connect("mongodb+srv://NutriPet:NutriPet123@cluster0.dy7ml0c.mongodb.net/?retryWrites=true&w=majority")
   .then(() => console.log("Connected to MongoDB Atlas"))
   .catch((error) => console.error(error));
 
